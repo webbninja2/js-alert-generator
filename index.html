@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="page_title">
+				<div>
+					<h1>JavaScript Alert Message Generator</h1>
+				</div>
+			</div>
+			<div class="col-12 px-0 mt-3">
+				<h5 class="pheading">The JavaScript alert() is used to display text in a dialog box that pops up on the screen.</h5>
+			</div>
+			<div class="globalOptions">
+				<h2>Enter your Message</h2>
+				<div class="show-alert box">
+					<div class="row options">
+						<div class="col-md-3">
+							<label>Show Alert</label>
+						</div>
+						<div class="col-md-3">
+							<input type="radio" id="onClick" name="show-alert" checked>
+							<label for="onClick">On Click</label>	
+						</div>
+						<div class="col-md-3">
+							<input type="radio" id="pageLoad" name="show-alert">
+							<label for="pageLoad">Page Load</label>
+						</div>
+					</div>
+				</div>
+				<div class="select-element box">
+					<div class="row options">
+						<div class="col-md-3">
+							<label>Select Element</label>
+						</div>
+						<div class="col-md-3">
+							<input type="radio" id="button" name="select-element" checked>
+							<label for="button">Button</label>
+						</div>
+						<div class="col-md-3">
+							<input type="radio" id="link" name="select-element">
+							<label for="link">Link</label>
+						</div>
+					</div>
+				</div>
+				<div class="link-name box">
+					<div class="row options">
+						<div class="col-md-3">
+							<label>Link name</label>
+						</div>
+						<div class="col-md-3">
+							<input type="text" id="link-name" value="Click Me!">
+						</div>
+					</div>
+				</div>
+				<div class="message box">
+					<div class="row options">
+						<div class="col-md-3">
+							<label>Message</label>
+						</div>
+						<div class="col-md-9">
+							<textarea id="message" rows="10" cols="55" style="resize: vertical;" placeholder="Enter your text here"></textarea>
+							<div id="messageValidation" class="text-danger"></div>
+						</div>
+					</div>
+				</div>
+				<button id="insert"><i class="fa fa-plus-circle"></i> Insert</button>
+			</div>
+			<div id="preview">
+				<h2>Preview</h2>
+				<button id="previewButton" onclick="alert('')">Click Me!</button>
+			</div>
+			<button id="GenerateCode"><i class="fa fa-gear"></i> Generate Code</button>
+			<button id="runCodeButton"><i class="fa fa-eye"></i> Run Code</button>
+			<div id="generatedCodeBox">
+				<h5>HTML</h5>
+				<textarea id="generatedCode" rows="5" cols="90" style="resize: vertical;"></textarea>
+				<button id="copyCodeButton"><i class="fa fa-clone"></i> Copy Code</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="assets/js/custom.js"></script>
